@@ -76,6 +76,7 @@ export class ListComponent implements OnInit {
   public bookForUpdate: Book = {title: '', author: '', date: ''};
   constructor(private _httpBookService: HttpBookService) {
   }
+  // Get request to get books from server
   ngOnInit(): any {
      this.getBooksHttp();
   }
@@ -84,6 +85,7 @@ export class ListComponent implements OnInit {
     this.modal.nativeElement.style.display = 'none';
   }
 
+  // create new book if book already exist send appropriate message to user and cancel
   createBook() {
     let bookLoop = null;
     let title;
@@ -114,7 +116,7 @@ export class ListComponent implements OnInit {
     this._httpBookService.getBooks().subscribe((resBooks: Book[]) => {this.books = resBooks});
 
   }
-
+// Open model for update items
   openModal(book) {
     this.bookForUpdate = book;
     this.modal.nativeElement.style.display = 'block';

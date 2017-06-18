@@ -15,6 +15,7 @@ import {ListComponent} from './list.component';
   imports: [
     BrowserModule, FormsModule, HttpModule,
     RouterModule.forRoot([
+      // main path
       { path: '', component: ListComponent },
     ])
   ],
