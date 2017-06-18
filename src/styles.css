@@ -1,0 +1,218 @@
+/* Master Styles */
+html {
+  height: 100%;
+}
+.header {
+  /*height: 100%;*/
+  /*background: url('libary.jpg') no-repeat;*/
+  /*background-position: center;*/
+  /*background-size: cover;*/
+}
+
+label{
+  display:inline-block;
+  width: 200px;
+}
+a{
+  text-decoration:none;
+  outline:none;
+}
+li {
+  background-color: rgba(238, 238, 238, 0.81);
+  margin: 0px 30px 10px 30px;
+  padding: 10px 20px;
+  border: 0px solid black;
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#li1 {
+  background-color: #9a0001;
+  text-color:white;
+}
+
+#li1 input{
+  width: 250px;
+  display:inline-block;
+}
+
+#li1 h3{
+  color:white;
+}
+h1 {
+  color: white;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  font-size: 350%;
+  margin: 0;
+  text-shadow: 2px 2px 4px #000000;
+  position: fixed;
+}
+h2, h3 {
+  display: inline;
+  color: #020101;
+  /*font-family: Impact, Charcoal, sans-serif;*/
+  letter-spacing: 2px;
+  /*font-weight: lighter;*/
+
+}
+
+.bookField {
+  width: 80px;
+}
+
+h4 {
+  /**/
+  display: inline;
+}
+
+i{
+  display: inline;
+  color: aqua;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /*height: 100%;*/
+  background: url('library.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment:fixed;
+}
+button {
+  margin: 0 0px 0 0;
+  float: right;
+  background-color: #9a0001;
+  border: none;
+  color: white;
+  padding: 2px 4px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#li1 button{
+  background-color: rgba(238, 238, 238, 0.81);
+  color: black;
+}
+
+.ng-invalid {
+  border: 1px solid black;
+}
+form span{
+  color:red;
+}
+/*#fedit {*/
+  /*width:30%;*/
+  /*height: 250px;*/
+/*}*/
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  padding-bottom: 10px;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  /*border: 1px solid #888;*/
+  width: 70%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #9a0001;
+  color: white;
+}
+
+.modal-body {padding: 2px 4px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #9a0001;
+  color: white;
+}
+
+.modal button,input[type=submit] {
+  background-color: #6569f3;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 10px;
+  border: none;
+  cursor: pointer;
+  width: 18%;
+}
+
+.modal input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 16px;
+}
+
+#form-edit {
+  background-color: #fefefe;
+  margin: 5% auto 5% auto;
+  border: 1px solid #888;
+  width: 100%;
+}
